@@ -5,3 +5,7 @@ Develop the following application, use the following HTML elements to get starte
 * Completed challenge has background green
 * Ongoing challenge has background yellow
 * Coming challenges have background red
+
+
+## Not
+İlk defa böyle geniş çaplı JavaScript kullandığım için bu minik proje baya hoşuma gitti. Bu nedenle buraya depolamak istedim. 
