@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaScript for Everyone:DOM</title>
+
+  </head>
+  <body>
+    <div class="wrapper">
+        <h1>Asabeneh Yetayeh challenges in 2020</h1>
+        <h2>30DaysOfJavaScript Challenge</h2>
+        <ul>
+            <li>30DaysOfPython Challenge Done</li>
+            <li>30DaysOfJavaScript Challenge Ongoing</li>
+            <li>30DaysOfReact Challenge Coming</li>
+            <li>30DaysOfFullStack Challenge Coming</li>
+            <li>30DaysOfDataAnalysis Challenge Coming</li>
+            <li>30DaysOfReactNative Challenge Coming</li>
+            <li>30DaysOfMachineLearning Challenge Coming</li>
+        </ul>
+    </div>
+<!-- SCRİPT START-->
+    <script>
+const body = document.querySelector("body")
+const h1 = document.querySelector("h1")
+const h2 = document.querySelector("h2")
+const ul = document.querySelector("ul")
+const li = document.querySelectorAll("li")
+
+// Body Style
+body.style.textAlign = "center"
+body.style.fontFamily = "sans-serif"
+
+ul.style.listStyle = "none"
+
+
+
+// H1-H2 Style
+h1.innerHTML = `Asabeneh Yetayeh challenges in <span class="year"> 2020 </span>`
+let year = document.querySelector(".year")
+year.style.fontSize = "54px"
+h1.style.fontSize ="24px"
+h2.style.fontSize = "19px"
+h2.style.textDecorationLine= "underline"
+
+// Year - Random Color
+let color;
+const randomColor = () => {
+    let random1 = Math.floor(Math.random()* 255)
+    let random2 = Math.floor(Math.random()* 255)
+    let random3 = Math.floor(Math.random()* 255)
+    color = `rgb(${random1},${random2},${random3})`
+    year.style.color = color
+}
+setInterval(randomColor,1000)
+
+// Date
+
+let d = new Date()
+const monthName = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+const month = monthName[d.getMonth()];
+const day = d.getDate();
+const currentYear = d.getFullYear();
+const hour = d.getHours();
+const minute = d.getMinutes();
+const second = d.getSeconds();
+
+date = `${month} ${day},${currentYear} ${hour}:${minute}:${second}` 
+// Date için H2'nin altına ul elementi oluşturdum ve Date'yi oraya ekledim.
+let dateUl = document.createElement("ul")
+h2.append(dateUl)
+dateUl.append(date)
+
+
+// Date Styling
+dateUl.classList.add("dateClass");
+let dateClass = document.querySelector(".dateClass")
+
+
+// Date - Random Color
+var randomColor2 = Math.floor(Math.random()*16777215).toString(16);
+dateClass.style.backgroundColor = "#"+randomColor2;
+setInterval(
+function () {
+  var randomColor2 = Math.floor(Math.random()*16777215).toString(16);
+  dateClass.style.backgroundColor = "#"+randomColor2;
+},1000);
+
+
+// Date Styling
+dateClass.style.border = "solid"
+dateClass.style.width = "350px"
+dateClass.style.margin = "0 auto"
+
+
+// List Styling
+li.forEach(list => {
+    list.style.border= "solid";
+    list.style.margin = "0 auto";
+    list.style.width  = "700px";
+    list.style.height = "30px";
+    list.style.marginTop = "10px";
+    list.style.paddingTop = "15px";
+    if (list.textContent.toLowerCase().includes("done")) {
+        list.style.backgroundColor = "rgb(11, 150, 78)"
+    } else if (list.textContent.toLowerCase().includes("ongoing")) {
+        list.style.backgroundColor = "rgb(229, 232, 17)"
+    } else {
+        list.style.backgroundColor = "rgb(223, 59, 59)"
+
+    }
+})
+
+</script>
+  </body>
+</html>
