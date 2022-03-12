@@ -1,0 +1,81 @@
+body{ 
+    height: 97vh; 
+    text-align: center;
+}
+#list{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-image: url(map_image.jpg);
+    font-size: 30px;
+  }
+.head{
+    background-image: url(globe-2.jpg);
+    background-size: 1750px;
+    height: 400px;
+    width: 100%;
+
+}
+
+.h2{
+font-size: 65px;
+    letter-spacing: 1px;
+    font-family: 'Fredoka', sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 153, 255, 0.707);
+    opacity: 100%;
+}
+
+h4{
+    font-size: 25px;
+    color: rgb(10, 10, 10);
+    letter-spacing: 2px;
+    font-family: 'Fredoka', sans-serif;
+    position: relative;
+    top: -30px;
+    background-color: rgba(0, 153, 255, 0.433);
+}
+p{
+    font-size: 23px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    font-family: 'Fredoka', sans-serif;
+    filter: none;
+    position: relative;
+    top: -30px;
+    background-color: rgba(0, 153, 255, 0.693);
+
+}
+.with{
+    color: rgb(255, 28, 3);
+}
+.wlength {
+    color: rgb(230, 255, 3);
+}
+
+.btn-1 {
+    height: 40px;
+    width: 150px;
+    background-color: rgb(181, 1, 145);
+    color: white; 
+ 
+}
+.btn-2 {
+    height: 40px;
+    width: 195px;
+    background-color: rgb(114, 4, 92);
+    color: white; 
+    margin-left: -2px;
+}
+.btn-3 {
+    height: 40px;
+    width: 45px;
+    background-color: rgb(199, 45, 168);
+    color: white; 
+    margin-left: -2px;
+}
+#filter {
+    width: 350px;
+    height: 35px;
+    margin-top: 10px;
+    border-radius: 8px;
+}

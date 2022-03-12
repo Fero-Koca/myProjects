@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>30DaysOfJavaScript:26 Day </title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="head">
+        <div class="content">
+            <h2 class="h2">WORLD COUNTRİES LİST</h2>
+            <h4></h4>
+            <p></p>        
+    
+            <button class="btn-1" onclick="search.setTypeFilter('normal')">STARTING WORD</button>
+            <button class="btn-2" onclick="search.setTypeFilter('all')">SEARCCH WITH ANY WORD</button>
+            <button class="btn-3" onclick="search.order(null,search)"><i class="fa-solid fa-arrow-up-a-z"></i> </button>
+            <br/>
+            <input id='filter' onkeyup="search.executeFilter(search)"></input>
+            <br/>
+        </div>
+    </div>
+  
+       
+<main>
+    <div id="list">
+
+    </div>
+</main>
+	<script src="countries.js"></script>
+	<script src="./main.js"></script>
+
+</body>
+
+</html>
