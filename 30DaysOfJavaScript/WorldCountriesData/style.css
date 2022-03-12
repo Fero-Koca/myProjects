@@ -1,0 +1,76 @@
+body {
+    background-color:rgb(240, 239, 248);
+    text-align: center;
+    height: 97vh; 
+}
+ #countries{ 
+    background-color: rgb(231, 231, 232);;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    box-shadow: 3px 5px 8px grey;
+}
+h2 {
+    font-size: 42px;
+    color: rgb(236, 142, 11);
+    letter-spacing: 10px;
+    font-family: 'Fredoka', sans-serif;
+}
+.feedback{
+    font-size: 22px;
+    font-family: 'Fredoka', sans-serif;
+}
+.graph-buttons{
+    background-color: rgb(217, 217, 225);
+    margin-top: 10px;
+    height: 100px;
+}
+button {
+margin-top:20px;
+font-size: 23px;
+margin-left: 25px;
+margin-right: 25px;
+background-color:  rgb(245, 149, 14);
+padding: 10px 10px 10px 10px;
+border-radius: 3px;
+box-shadow: 1px 1px 1px grey;
+font-family: 'Fredoka', sans-serif;
+}
+.graph-title {
+color:black;
+position: relative;
+bottom:39px;
+background-color: rgb(217, 217, 225);
+padding-bottom: 10px;
+font-family: 'Fredoka', sans-serif;
+letter-spacing: 2px;
+
+}
+/* .graphs{
+} */
+.country{ 
+    min-width: 45px; 
+    color:black;
+    font-size: 20px;
+margin-left: 10px;
+margin-right: 100px;
+position: absolute;
+left: 50px ;
+
+    }
+.value{ float: right;
+color:black;
+font-size: 20px;
+margin-left: 100px;
+margin-right: 10px;
+position: absolute;
+right:50px;
+}
+
+
+.percentual{
+    background-color: orange; 
+    border: 1px solid;
+width: 97vw;
+margin-left: 505px;
+margin-right: 115px;
+}
