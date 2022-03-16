@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link
+		href="https://fonts.googleapis.com/css?family=Aldrich|Lato:300,400,700|Montserrat:300,400,500|Nunito:300,400,600|Oswald|Raleway+Dots|Raleway:300,400|Roboto:300,400,500&display=swap"
+		rel="stylesheet">
+	<script src="https://kit.fontawesome.com/ce3e7ed90f.js" crossorigin="anonymous"></script>
+	<title>30Days Of JavaScript: 29</title>
+	<style>
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+		h1{
+
+			font-size: 180px;
+			margin-left: 40px;
+		}
+	</style>
+
+</head>
+
+<body>
+
+<h1 class="h1">30 DAYS OF JAVASCRİPT FERHAT KOCA</h1>
+
+
+<script>
+
+
+let h1 = document.querySelectorAll('.h1')
+for(let i = 0, l = h1.length; i < l; i++) {
+	let str = h1[i].textContent
+	h1[i].innerHTML = ''
+	
+	for(let j = 0, ll = str.length; j < ll; ++j){
+		let n = document.createElement('span')
+		h1[i].appendChild(n)
+		n.textContent = str[j]
+		setInterval(()=> {
+			const randomColor = Math.floor(Math.random()*16777215).toString(16);
+			n.style.color = (j % 2) ? `#${randomColor}` : `#${randomColor}`
+		},1500)
+	
+	}
+}
+
+setInterval(() => {
+	let body = document.querySelector('body')
+	const randomColor = Math.floor(Math.random()*16777215).toString(16);
+	body.style.backgroundColor = `#${randomColor}`
+},1500)
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+
+</html>
