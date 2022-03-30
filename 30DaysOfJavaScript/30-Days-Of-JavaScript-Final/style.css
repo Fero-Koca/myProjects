@@ -1,0 +1,117 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+body {
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+/**/
+.header {
+    background-color: rgb(133, 129, 123)  ;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+}
+
+.title {
+    font-family: 'Domine', serif;
+    margin-top: 25px;
+font-size: 37px;
+letter-spacing: 12px;
+color: rgb(250, 207, 36);
+}
+
+.length {
+font-family: 'Poppins', sans-serif;
+font-size: 17px;
+letter-spacing: 6px;
+color: rgb(21, 18, 18);
+
+}
+
+.filtered-length{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+letter-spacing: 2px;
+    color: rgb(250, 207, 36)
+}
+
+.filtered-length > span {
+    color: rgb(209, 8, 8);
+}
+/**/
+.form{
+    margin-bottom: 35px;
+    margin-top: 15px;
+}
+.input{
+    width: 620px;
+    height: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    padding-left: 15px;
+    background-color: rgb(247, 241, 234);
+    font-family: 'Poppins', sans-serif;}
+
+.button {
+font-size: 15px;
+margin-left: 25px;
+margin-bottom: 20px;
+border-radius: 30px;
+background-color: rgb(128, 17, 184);
+padding: 7px 38px 7px 38px;
+color: white;
+font-family: 'Domine', serif;
+}
+.button:hover{
+    background-color: antiquewhite;
+    border-color: rgb(128, 17, 184);;
+    color: rgb(128, 17, 184);;
+}
+
+.btn-spn > svg {
+    margin-left:5px;
+}
+
+
+
+
+
+
+
+
+/**/
+#list {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    list-style-type: none;
+    margin-left: -22px;
+}
+
+.list-div{
+    align-items: center;
+text-align: center;
+font-size: 13px;
+background: rgb(191, 186, 180);
+width: 250px;
+height: 250px;
+margin: 3px;
+padding: 0;
+margin-top: 10px;
+margin-bottom: 10px
+
+}
+
+.main-list{
+    background-color: rgb(208, 196, 196);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/**/
+
+
