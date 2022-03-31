@@ -1,0 +1,94 @@
+h1{
+    font-weight: normal;
+    margin: 20px auto;
+    text-align: center;
+    font-family: 'Domine', serif;
+    font-size: 3em;
+
+}
+
+form{
+    width: 500px;
+    margin: 20px auto;
+    
+}
+input{
+    display: block;
+    padding: 8px 16px;
+    font-size: 2em;
+    margin: 10px auto;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 3px solid #ccc;
+    outline: none !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text {
+        font-size: 1.5em;
+        font-variant: small-caps;
+        font-family: 'Domine', serif;
+
+}
+
+/* validation styles */
+
+input.valid{
+    border-color: #36cc36;
+}
+input.invalid{
+    border-color: orange;
+}
+input + p{
+    font-family: arial;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 10px;
+    color: orange;
+    opacity: 0;
+    height: 0;
+}
+input.invalid + p{
+    opacity: 1;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Button styles */
+
+.btn{
+    font-size: 1.2em;
+    padding: 1em;
+    padding-left: 2.3em;
+    padding-right: 2.3em;
+    color: white;
+    background-color: rgb(99, 92, 92);
+    border-radius: 7px;
+    margin-top: 20px;
+    border: 1px;
+    font-family: 'Domine', serif;
+    font-variant: small-caps;
+}
+.btn:hover:focus:active {
+    background-color: rgb(140, 133, 133);
+}
+
+.ok {
+    background-color: #2cab2c;
+    border-radius: 7px;
+    margin-top: 20px;
+    border: 1px;
+    font-family: 'Domine', serif;
+    font-variant: small-caps;
+    font-size: 1.2em;
+    padding: 1em;
+    padding-left: 2.3em;
+    padding-right: 2.3em;
+    color: white;
+}
+.ok:hover:focus:active {
+    background-color: #32d232;
+
+}
